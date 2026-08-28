@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jetzan Azael Esquivel — Full Stack Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Jetzan Azael Esquivel, Computer Systems Engineering student and Full Stack Developer."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <link rel="shortcut icon" href="imgs/lenguaje-de-codificacion.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ================= TOP BAR / TABS ================= -->
+    <header class="topbar">
+      <div class="topbar__path">
+        <span class="dim">~/</span><span class="path-user">jetzan-esquivel</span
+        ><span class="dim">/portfolio</span>
+        <span class="cursor-dot" aria-hidden="true"></span>
+      </div>
+
+      <nav class="tabs" aria-label="Navegación principal">
+        <button
+          class="tabs__toggle"
+          id="tabsToggle"
+          aria-expanded="false"
+          aria-controls="tabsList"
+        >
+          <span class="dim">≡</span> menu
+        </button>
+        <ul class="tabs__list" id="tabsList">
+          <li>
+            <a href="#about" class="tab" data-icon="md"
+              ><span class="tab__icon tab__icon--md" aria-hidden="true"></span
+              >about.md</a
+            >
+          </li>
+          <li>
+            <a href="#stack" class="tab" data-icon="json"
+              ><span class="tab__icon tab__icon--json" aria-hidden="true"></span
+              >stack.json</a
+            >
+          </li>
+          <li>
+            <a href="#experiencia" class="tab" data-icon="log"
+              ><span class="tab__icon tab__icon--log" aria-hidden="true"></span
+              >experience.log</a
+            >
+          </li>
+          <li>
+            <a href="#proyectos" class="tab" data-icon="dir"
+              ><span class="tab__icon tab__icon--dir" aria-hidden="true"></span
+              >projects/</a
+            >
+          </li>
+          <li>
+            <a href="#evolucion" class="tab" data-icon="git"
+              ><span class="tab__icon tab__icon--git" aria-hidden="true"></span
+              >evolution.git</a
+            >
+          </li>
+          <li>
+            <a href="#educacion" class="tab" data-icon="md2"
+              ><span class="tab__icon tab__icon--md2" aria-hidden="true"></span
+              >education.md</a
+            >
+          </li>
+          <li>
+            <a href="#contacto" class="tab" data-icon="sh"
+              ><span class="tab__icon tab__icon--sh" aria-hidden="true"></span
+              >contact.sh</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero" id="top">
+        <div class="hero__inner">
+          <div
+            class="terminal"
+            role="img"
+            aria-label="Terminal mostrando la presentación de Jetzan Azael Esquivel"
+          >
+            <div class="terminal__bar">
+              <span class="terminal__dot terminal__dot--r"></span>
+              <span class="terminal__dot terminal__dot--y"></span>
+              <span class="terminal__dot terminal__dot--g"></span>
+              <span class="terminal__title">visitante@portfolio — 80x24</span>
+            </div>
+            <div class="terminal__body" id="terminalBody">
+              <pre class="terminal__static" id="terminalStatic" hidden>
+visitor@portfolio:~$ whoami
+&gt; Jetzan Azael Esquivel
+
+visitor@portfolio:~$ cat role.txt
+&gt; Computer Systems Engineering Student
+&gt; Full Stack Developer — web, backend, and databases
+
+visitor@portfolio:~$ cat approach.txt
+&gt; I learn by installing, configuring, and building.
+&gt; I do not just read about a technology: I use it until it breaks
+&gt; and find out why.
+
+visitor@portfolio:~$ _</pre
+              >
+              <pre
+                class="terminal__typed"
+                id="terminalTyped"
+                aria-hidden="true"
+              ></pre>
+            </div>
+          </div>
+
+          <div class="hero__actions">
+            <a href="#proyectos" class="btn btn--primary">View projects</a>
+            <a href="#contacto" class="btn btn--ghost">Contact</a>
+            <a href="mailto:jetzan434@gmail.com" class="btn btn--ghost"
+              >jetzan434@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT ================= -->
+      <section class="section" id="about" data-reveal>
+        <h2 class="section__path">~/about<span class="ext">.md</span></h2>
+        <div class="section__content prose">
+          <p>
+            I am currently studying
+            <strong>Computer Systems Engineering</strong> at
+            <strong>Universidad Autónoma de Aguascalientes</strong>. I am
+            interested in software development in general — web development,
+            backend, and databases — and, increasingly, in understanding what
+            happens under the tools I use every day.
+          </p>
+
+          <p>
+            I am self-taught out of necessity and curiosity: when I want to
+            learn something new, I do not start by reading theory; I start by
+            building and experimenting. That is how I have learned to work with
+            PostgreSQL directly from <code>psql</code>, manage my development
+            environment on Linux, and solve problems by understanding how things
+            work rather than simply following tutorials.
+          </p>
+
+          <p>
+            Right now, I am strengthening my <strong>JavaScript</strong> and
+            <strong>TypeScript</strong> skills and exploring low-level
+            programming — memory, processes, concurrency, and how an operating
+            system works internally.
+          </p>
+        </div>
+        <img
+          src="imgs/perfil.png"
+          class="image__profile"
+          alt="Foto de perfil"
+        />
+      </section>
+
+      <!-- ================= STACK ================= -->
+      <section class="section" id="stack" data-reveal>
+        <h2 class="section__path">~/stack<span class="ext">.json</span></h2>
+        <p class="section__hint">
+          Technologies I have built with — organized by where I use them, rather
+          than in one flat list.
+        </p>
+
+        <div class="json-block">
+          <span class="json-brace">{</span>
+
+          <div class="json-group">
+            <span class="json-key">"languages"</span
+            ><span class="json-colon">:</span>
+            <div class="chips">
+              <span class="chip">TypeScript</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span> <span class="chip">Java</span>
+              <span class="chip">C++</span><span class="chip">C#</span>
+              <span class="chip">C</span><span class="chip">PHP</span
+              ><span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="json-group">
+            <span class="json-key">"frontend"</span
+            ><span class="json-colon">:</span>
+            <div class="chips">
+              <span class="chip chip--accent">React</span
+              ><span class="chip">HTML5</span> <span class="chip">CSS3</span
+              ><span class="chip">Vite</span>
+            </div>
+          </div>
+
+          <div class="json-group">
+            <span class="json-key">"backend"</span
+            ><span class="json-colon">:</span>
+            <div class="chips">
+              <span class="chip chip--accent">Node.js</span
+              ><span class="chip">Express</span>
+              <span class="chip">Prisma ORM</span
+              ><span class="chip">ASP.NET MVC</span
+              ><span class="chip">.NET 7</span>
+            </div>
+          </div>
+
+          <div class="json-group">
+            <span class="json-key">"databases"</span
+            ><span class="json-colon">:</span>
+            <div class="chips">
+              <span class="chip chip--teal">PostgreSQL</span
+              ><span class="chip chip--teal">SQL Server</span>
+              <span class="chip chip--teal">MySQL</span
+              ><span class="chip chip--teal">MongoDB</span>
+            </div>
+          </div>
+
+          <div class="json-group">
+            <span class="json-key">"devops_tools"</span
+            ><span class="json-colon">:</span>
+            <div class="chips">
+              <span class="chip">Git</span><span class="chip">GitHub</span
+              ><span class="chip">Docker</span> <span class="chip">Linux</span
+              ><span class="chip">Postman</span
+              ><span class="chip">Cloudinary</span>
+            </div>
+          </div>
+
+          <div class="json-group json-group--muted">
+            <span class="json-key">"exploring"</span
+            ><span class="json-colon">:</span>
+            <div class="chips">
+              <span class="chip chip--dim">Flutter / Dart</span
+              ><span class="chip chip--dim">Android SDK</span>
+              <span class="chip chip--dim">Godot / GDScript</span
+              ><span class="chip chip--dim"
+                >Low-level programming (C, memory, concurrency, syscalls)</span
+              >
+            </div>
+            <p class="json-note">
+              // technologies in active learning — not listed as established
+              expertise
+            </p>
+          </div>
+
+          <span class="json-brace">}</span>
+        </div>
+      </section>
+
+      <!-- ================= EXPERIENCIA ================= -->
+      <section class="section" id="experiencia" data-reveal>
+        <h2 class="section__path">~/experience<span class="ext">.log</span></h2>
+
+        <article class="log-entry">
+          <div class="log-entry__meta">
+            <span class="log-entry__tag">2025 — 2026</span>
+            <span class="log-entry__status">completed</span>
+          </div>
+          <h3 class="log-entry__title">Software Development Intern</h3>
+          <p class="log-entry__org">Municipio de Aguascalientes</p>
+          <ul class="log-entry__list">
+            <li>
+              Development and maintenance of web applications using
+              <strong>.NET 7 MVC</strong> and <strong>SQL Server</strong>.
+            </li>
+            <li>
+              Implementation of authentication modules and CRUD operations.
+            </li>
+            <li>
+              Development and optimization of SQL queries for information
+              management.
+            </li>
+            <li>
+              Work with Visual Studio, SQL Server, and MVC architecture in a
+              real professional environment.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- ================= PROYECTOS ================= -->
+      <section class="section" id="proyectos" data-reveal>
+        <h2 class="section__path">~/projects<span class="ext">/</span></h2>
+
+        <div class="projects">
+          <article class="project-card">
+            <p class="project-card__path">projects/full-stack-web-platform/</p>
+
+            <h3 class="project-card__title">Full Stack Web Platform</h3>
+
+            <img
+              src="imgs/GMH.png"
+              class="image__project"
+              alt="Screenshot of the web platform"
+            />
+            <div class="chips chips--tight">
+              <span class="chip chip--accent">Backend</span>
+              <span class="chip">
+                <i class="devicon-typescript-plain"></i>
+                TypeScript</span
+              >
+              <span class="chip">
+                <i class="devicon-nodejs-plain"></i>
+                Node.js</span
+              >
+              <span class="chip">
+                <i class="devicon-express-original"></i>
+                Express</span
+              >
+              <span class="chip chip--teal">
+                <i class="devicon-postgresql-plain"></i>
+                PostgreSQL</span
+              >
+              <span class="chip">
+                <i class="devicon-prisma-original"></i>
+                Prisma</span
+              >
+            </div>
+
+            <ul class="project-card__list">
+              <li>Backend development for a full stack web application.</li>
+              <li>Development of a REST API with CRUD operations.</li>
+              <li>
+                Design and management of a PostgreSQL database using Prisma ORM.
+              </li>
+              <li>
+                Implementation of backend logic and integration with external
+                services.
+              </li>
+            </ul>
+            <a
+              class="project-card__repo"
+              href="https://github.com/Jetzan/Backend_Grupo_Multiherramientas.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                class="project-card__repo-icon"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                />
+              </svg>
+              <span>Ver repositorio</span>
+            </a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-card__path">projects/web-management-system/</p>
+            <h3 class="project-card__title">Web Management System</h3>
+            <img
+              src="imgs/LoginMVC.jpeg"
+              class="image__project"
+              alt="Screenshot of the web platform"
+            />
+            <div class="chips chips--tight">
+              <span class="chip">
+                <i class="devicon-dot-net-plain"></i>
+                .NET 7</span
+              >
+              <span class="chip">
+                <i class="devicon-csharp-plain"></i>
+                C#</span
+              >
+            </div>
+            <ul class="project-card__list">
+              <li>
+                Integration and consumption of a REST API provided by the
+                backend.
+              </li>
+              <li>Implementation of user authentication.</li>
+              <li>Development of CRUD operations through HTTP requests.</li>
+              <li>Integration of forms and data validation.</li>
+              <li>
+                Implementation of dynamic views for information management.
+              </li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <p class="project-card__path">projects/kronos-task-manager/</p>
+
+            <h3 class="project-card__title">Chronos — Task Manager</h3>
+
+            <img
+              src="imgs/Chronos.png"
+              class="image__project"
+              alt="Screenshot of the Web System Chronos"
+            />
+
+            <div class="chips chips--tight">
+              <span class="chip chip--accent">Backend</span>
+
+              <span class="chip chip--teal">
+                <i class="devicon-mysql-original"></i>
+                MySQL</span
+              >
+              <span class="chip">
+                <i class="devicon-javascript-plain"></i>
+
+                JavaScript</span
+              >
+            </div>
+
+            <ul class="project-card__list">
+              <li>
+                Backend development for a web-based task management application.
+              </li>
+              <li>
+                Implementation of user authentication and session management.
+              </li>
+              <li>Development of CRUD operations for task management.</li>
+              <li>Database design and integration using MySQL.</li>
+            </ul>
+            <a
+              class="project-card__repo"
+              href="https://github.com/Jetzan/Backend_To_Do_List.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg
+                class="project-card__repo-icon"
+                viewBox="0 0 16 16"
+                aria-hidden="true"
+              >
+                <path
+                  fill="currentColor"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"
+                />
+              </svg>
+              <span>Ver repositorio</span>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= EVOLUCIÓN (git log) ================= -->
+      <section class="section" id="evolucion" data-reveal>
+        <h2 class="section__path">~/evolution<span class="ext">.git</span></h2>
+        <p class="section__hint">
+          git log --reverse — how my profile has taken shape.
+        </p>
+
+        <ol class="gitlog">
+          <li class="gitlog__item">
+            <span class="gitlog__hash">a1f9c02</span>
+            <span class="gitlog__msg"
+              >fundamentals: first languages and programming logic</span
+            >
+          </li>
+          <li class="gitlog__item">
+            <span class="gitlog__hash">4e0d71b</span>
+            <span class="gitlog__msg"
+              >explore: desktop, video games, web, and databases</span
+            >
+          </li>
+          <li class="gitlog__item">
+            <span class="gitlog__hash">7bb52ad</span>
+            <span class="gitlog__msg"
+              >focus: growing inclination toward web and backend</span
+            >
+          </li>
+          <li class="gitlog__item">
+            <span class="gitlog__hash">c3a88f1</span>
+            <span class="gitlog__msg"
+              >adopt stack: React + Node.js + TypeScript + Express + Prisma +
+              PostgreSQL</span
+            >
+          </li>
+          <li class="gitlog__item gitlog__item--tag">
+            <span class="gitlog__hash">e29901d</span>
+            <span class="gitlog__msg"
+              >professional practice: .NET MVC + SQL Server, Aguascalientes
+              Municipality</span
+            >
+            <span class="gitlog__tag">tag: first-real-environment</span>
+          </li>
+          <li class="gitlog__item">
+            <span class="gitlog__hash">9f4c221</span>
+            <span class="gitlog__msg"
+              >expand: Flutter and cross-platform mobile development</span
+            >
+          </li>
+          <li class="gitlog__item">
+            <span class="gitlog__hash">0d7ab3e</span>
+            <span class="gitlog__msg"
+              >migrate environment: Linux Mint + deepen JS/TS and systems
+              knowledge</span
+            >
+          </li>
+          <li class="gitlog__item gitlog__item--head">
+            <span class="gitlog__hash">HEAD</span>
+            <span class="gitlog__msg"
+              >build increasingly complete projects — <em>in progress</em></span
+            >
+          </li>
+        </ol>
+      </section>
+
+      <!-- ================= EDUCACIÓN + CERTIFICACIONES ================= -->
+      <section class="section" id="educacion" data-reveal>
+        <h2 class="section__path">~/education<span class="ext">.md</span></h2>
+
+        <div class="edu-grid">
+          <div class="edu-block">
+            <h3 class="edu-block__heading">Education</h3>
+
+            <div class="edu-item">
+              <div class="edu-item__row">
+                <strong>Universidad Autónoma de Aguascalientes</strong>
+                <span class="dim">2023 — present</span>
+              </div>
+              <p class="edu-item__sub">
+                Computer Systems Engineering · in progress
+              </p>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-item__row">
+                <strong>Conalep 1</strong>
+                <span class="dim">2020 — 2023</span>
+              </div>
+              <p class="edu-item__sub">
+                Computer Technician · graduated with academic honors
+              </p>
+            </div>
+          </div>
+
+          <div class="edu-block">
+            <h3 class="edu-block__heading">Certifications</h3>
+            <ul class="cert-list">
+              <li>
+                <span class="cert-list__name"
+                  >Computer Equipment and Software Maintenance</span
+                >
+                <span class="cert-list__org"
+                  >CONOCER / Government of Mexico · 2022</span
+                >
+              </li>
+              <li>
+                <span class="cert-list__name">Security Fundamentals</span>
+                <span class="cert-list__org">CONOCER / Microsoft · 2023</span>
+              </li>
+              <li>
+                <span class="cert-list__name"
+                  >Computer Vision and Artificial Intelligence Workshop</span
+                >
+                <span class="cert-list__org">INCyTEA · 2023</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACTO ================= -->
+      <section class="section section--contact" id="contacto" data-reveal>
+        <h2 class="section__path">~/contact<span class="ext">.sh</span></h2>
+
+        <pre
+          class="code-block"
+        ><span class="dim">$</span> curl -X POST contact \
+  --email    <span class="tok">jetzan434@gmail.com</span> \
+  --github   <span class="tok">github.com/Jetzan</span> \
+  --linkedin <span class="tok">linkedin.com/in/jetzan-esquivel-629520302</span> \
+  --tel      <span class="tok">449 211 3265</span></pre>
+
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:jetzan434@gmail.com"
+            ><i class="fa-solid fa-envelope"></i>Email</a
+          >
+          <a
+            class="contact-link"
+            href="https://github.com/Jetzan"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fa-brands fa-github"></i>GitHub</a
+          >
+          <a
+            class="contact-link"
+            href="https://www.linkedin.com/in/jetzan-esquivel-629520302"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn</a
+          >
+          <a class="contact-link" href="tel:+524492113265"
+            ><i class="fa-solid fa-phone"></i>Phone</a
+          >
+        </div>
+
+        <p class="section__hint">
+          Available for job opportunities. Focused on good coding practices,
+          teamwork, and continuous learning.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__line dim">
+        © 2026 Jetzan Azael Esquivel — built with HTML5, CSS3, and JavaScript.
+      </p>
+    </footer>
+    <script src="https://kit.fontawesome.com/5f658418e2.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
